@@ -1,0 +1,23 @@
+// Font Family
+$Poppins: 'Poppins',
+sans-serif;
+// Colors ---------------
+$theme-color: #3778BC;
+$theme-secondiry-color: #A5CCF4;
+$theme-bg-color: #3778BC;
+$white: #ffffff;
+$body-text-color: #797979;
+$dark-text-color:#797979;
+$accordon-bg:#86BEF7;
+$gray-bg:#F8F8F8;
+// Heading Color
+$heading-color: #222222;
+$dark-heading-color: #484848;
+// border color
+$gray-border:#E3E3E3;
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';

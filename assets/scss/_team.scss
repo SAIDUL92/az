@@ -1,0 +1,39 @@
+// team-area
+.team-area {
+    padding: 50px 0 70px;
+}
+
+.single-member {
+    margin-bottom: 30px;
+    & img {
+        @media #{$xs} {
+            width: 100%;
+        }
+    }
+}
+
+.team-info {
+    & h2 {
+        line-height: 1;
+        margin: 15px 0;
+        & a {
+            font-size: 16px;
+            font-weight: 600;
+            color: $theme-color;
+            text-transform: capitalize;
+            @media #{ $lg} {
+                font-size: 13px;
+            }
+        }
+    }
+    & p {
+        margin-bottom: 0;
+    }
+}
+
+.team-hr {
+    width: 50px;
+    height: 2px;
+    margin: 0 0 15px;
+    background: $theme-bg-color;
+}

@@ -1,0 +1,39 @@
+/*=========================
+--  -appointment-sec
+==========================
+*/
+
+.apoint-ment-sec {
+    padding-bottom: 100px;
+}
+
+.apoint-ment {
+    & p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    & ul {
+        margin-top: 20px;
+        & li.list-inline-item {
+            margin-right: 30px;
+            @media #{$xs} {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            @media #{$sm} {
+                display: inline-block;
+                margin-right: 30px;
+                margin-bottom: 0px;
+            }
+            & span {
+                color: $theme-bg-color;
+                font-weight: 700;
+                font-size: 20px;
+                position: relative;
+                top: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

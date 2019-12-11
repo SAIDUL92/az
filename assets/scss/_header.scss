@@ -1,0 +1,64 @@
+// header-css-start
+.header-top {
+    padding: 10px 0;
+}
+
+.header-bg {
+    background: $theme-bg-color;
+    .header-top-inner {
+        & p {
+            margin-bottom: 0;
+            color: $white;
+            font-weight: 400;
+            font-size: 13px;
+        }
+    }
+}
+
+// header-bottom
+.header-bottom {
+    padding: 20px 0;
+    box-shadow: 0 0px 5px 6px rgba(0, 0, 0, 0.1);
+    @include transition(.3s);
+}
+
+// navbar-nav
+.navbar-nav {
+    .nav-item {
+        margin: 0 23px;
+        & a.nav-link {
+            color: $theme-color;
+            font-weight: 400;
+            text-transform: capitalize;
+            padding: 0;
+            font-size: 16px;
+            &.active {
+                color: pink;
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding: 0;
+}
+
+.navbar-toggler {
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.header-bottom.header-sticky.sticky-active {
+    position: fixed;
+    top: 0;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    @include transition(.3s);
+}

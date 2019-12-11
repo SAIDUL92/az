@@ -1,0 +1,92 @@
+// accordion-section
+.accordion-section {
+    padding-bottom: 100px;
+}
+
+.card {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    & h5 {
+        position: relative;
+        & button {
+            width: 100%;
+            text-align: left;
+            color: $dark-heading-color;
+            font-weight: 600;
+            font-size: 14px;
+            padding: .75rem 1.25rem;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
+    }
+}
+
+.card-header {
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+button.btn.btn-link {
+    background: $accordon-bg;
+    color: $white;
+}
+
+button.btn.btn-link.collapsed {
+    background: $gray-bg;
+    color: $dark-heading-color;
+}
+
+button.btn.btn-link::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f068";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 50px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background: $theme-bg-color;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+button.btn.btn-link.collapsed::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f067";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 50px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background: $gray-bg;
+    transform: translateY(-50%)
+}

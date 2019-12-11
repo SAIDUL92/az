@@ -1,0 +1,23 @@
+/*=========================
+-- footer-section
+==========================
+*/
+
+.footer-section {
+    padding: 20px 0;
+    background: $white;
+}
+
+.footer {
+    & p {
+        color: $body-text-color;
+        margin-bottom: 0;
+        font-size: 12px;
+        @media #{$xs} {
+            text-align: center;
+        }
+        @media #{$sm} {
+            text-align: left;
+        }
+    }
+}

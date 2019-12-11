@@ -1,0 +1,16 @@
+/*=======================
+    -- gallery-section 
+==========================*/
+
+.gallery-section {
+    padding-bottom: 100px;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+    & img {
+        @media #{$xs} {
+            width: 100%;
+        }
+    }
+}
